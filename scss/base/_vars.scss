@@ -1,0 +1,47 @@
+// Fonts
+@font-face {
+    font-family: minervaModernBold;
+    src: url(../fonts/minerva-modern/T-26\ -\ Minerva\ Modern\ Bold.woff2);
+}
+@font-face {
+    font-family: minervaModernRegular;
+    src: url(../fonts/minerva-modern/T-26\ -\ Minerva\ Modern\ Regular.woff2);
+}
+@font-face {
+    font-family: yantramanavRegular;
+    src: url(../fonts/yantramanav/Yantramanav-Regular.woff2);
+}
+@font-face {
+    font-family: yantramanavBold;
+    src: url(../fonts/yantramanav/Yantramanav-Regular.woff2);
+}
+@font-face {
+    font-family: yantramanavThin;
+    src: url(../fonts/yantramanav/Yantramanav-Thin.woff2);
+}
+@font-face {
+    font-family: yantramanavMedium;
+    src: url(../fonts/yantramanav/Yantramanav-Medium.woff2);
+}
+
+$font-main: 'Yantramanav', sans-serif;
+$yantramanav-regular: yantramanavRegular;
+$yantramanav-bold: yantramanavBold;
+$yantramanav-thin: yantramanavThin;
+$yantramanav-medium: yantramanavMedium;
+$minerva-modern-bold: minervaModernBold;
+$minerva-modern-regular: minervaModernRegular;
+
+//Background Colors
+$header-bg: #7F0057;
+$white: #ffffff;
+$dark-white: #FAFAFA;
+$gray: #707070;
+$not-active-contact: #B5B5B5;
+$active-contact: #ffffff;
+$dark-gray: #2F2F2F;
+$black: #000000;
+$magenta: #8B0459;
+$dark-magenta: #500137;
+$light-gray: #969696;
+$footer-bg: #22252A;

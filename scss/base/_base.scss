@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;700&display=swap');
+
+
+body {
+    font-family: $font-main;
+    background-color: $white;
+    color: $black;
+    font-size: 19px;
+}
+
+a {
+    color: $white;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1706px;
+}
+
+
+@media screen and (max-width: 1706px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+    }
+}

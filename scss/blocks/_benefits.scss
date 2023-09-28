@@ -1,0 +1,40 @@
+.benefits {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    column-gap: 16px;
+    margin-top: 6px;
+
+    .benefits-item {
+        height: 100%;
+        width: 21.1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $dark-white;
+        padding-bottom: 57px;
+        padding-top: 50px;
+
+        svg {
+            height: 77.6px;
+            max-width: 100px;
+        }
+        .shipping-icon {
+            width: 100px;
+            height: 78px;
+        }
+
+        .benefits-discription {
+            font-family: $yantramanav-regular;
+            margin-top: 32px;
+            letter-spacing: 2.5px;  
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+}

@@ -1,0 +1,72 @@
+.item-description {
+    color: $white;
+
+    .title-bigger {
+        font-size: 45px;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        text-overflow: ellipsis;
+    }
+    .title {
+        font-size: 43px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-overflow: ellipsis;
+    }
+    .description {
+        font-size: 19px;
+        font-family: $yantramanav-regular;
+    }
+}
+
+.benefits-discription {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $black;
+    letter-spacing: 1.5px;
+}
+
+.main-headline-wrapper {
+    min-height: 210px;
+    margin-top: 127px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .main-headline-text {
+            font-size: 90px;
+            letter-spacing: 0.5px;
+            color: $black;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: $minerva-modern-bold;
+        }
+        .pre-main-headline-text {
+            font-size: 67px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .main-headline-wrapper {
+        min-height: 100px;
+        margin-top: 80px;
+    
+        .container {
+    
+            .main-headline-text {
+                font-size: 35px;
+            }
+            .pre-main-headline-text {
+                font-size: 25px;
+            }
+        }
+    }
+}

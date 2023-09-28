@@ -1,0 +1,244 @@
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 106px;
+    padding-bottom: 98px;
+    background-color: $black;
+    margin-bottom: 137px;
+
+    .headline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+        .company {
+            text-align: center;
+            font-family: yantramanavRegular;
+            color: #ffffff;
+            margin-bottom: 25px;
+            font-size: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 600px;
+        }
+        .title {
+            text-transform: uppercase;
+            font-size: 73px;
+            color: $white;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 600px;
+            margin-bottom: 16px;
+        }
+        .title-description {
+            font-size: 19px;
+            font-family: $yantramanav-regular;
+            color: $white;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 700px;
+        }
+    }
+    .contacts-box {
+        margin-bottom: 106px;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            column-gap: 40px;
+            padding-top: 123px;
+
+            .contact-item {
+                width: 24%;
+                min-height: 363px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+
+                img {
+                    width: 48%;
+                    border-radius: 50%;
+                    opacity: 50%;
+                    margin-bottom: 59px;
+                }
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    text-align: center;
+                    color: $white;
+
+                    .location {
+                        text-align: center;
+                        color: $not-active-contact;
+                        font-size: 22px;
+                        margin-bottom: 8px;
+                    }
+                    .name {
+                        color: $white;
+                        font-family: $yantramanav-regular;
+                        font-size: 19px;
+                        margin-bottom: 26px;
+                    }
+                    .phone-number-wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .contact-phone-icon {
+                            width: 27px;
+                            height: 27px;
+                        }
+                        .contact-phone-icon > path:nth-of-type(1){
+                            color: green;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .button {
+        width: 254px;
+        height: 66px;
+        background-color: $gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .button-text {
+            font-size: 19px;
+            font-family: $yantramanav-regular;
+        }
+    }
+}
+.contact-slider {
+    height: 400px;
+    min-width: 0;
+
+    .contact-slider-wrapper {
+
+        .contact-slide {
+            width: 200px;
+            background-color: #fff;
+        }
+    }
+    // .contact-item {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: end;
+    //     align-items: center;
+    // }
+    // .contact-item {
+    //     height: 363px;
+    //     cursor: pointer;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: end;
+    //     align-items: center;
+
+    //     img {
+    //         width: 48%;
+    //         border-radius: 50%;
+    //         opacity: 50%;
+    //         margin-bottom: 59px;
+    //     }
+    //     .info {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: start;
+    //         align-items: center;
+    //         text-align: center;
+    //         color: $white;
+
+    //         .location {
+    //             text-align: center;
+    //             color: $not-active-contact;
+    //             font-size: 22px;
+    //             margin-bottom: 8px;
+    //         }
+    //         .name {
+    //             color: $white;
+    //             font-family: $yantramanav-regular;
+    //             font-size: 19px;
+    //             margin-bottom: 26px;
+    //         }
+    //         .phone-number-wrapper {
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+
+    //             .contact-phone-icon {
+    //                 width: 27px;
+    //                 height: 27px;
+    //             }
+    //             .contact-phone-icon > path:nth-of-type(1){
+    //                 color: green;
+    //             }
+    //         }
+
+    //     }
+    // }
+}
+
+
+.contact-button-prev {
+    width: 64px;
+    height: 71px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 44.5%;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.contact-button-next {
+    width: 64px;
+    height: 71px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 44.5%;
+    cursor: pointer;
+}
+.contact-arrow-icon {
+    width: 25px;
+    height: 10px;
+}
+
+.contact-button-prev::after,
+.contact-button-next::after {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        .contacts-box {
+            display: none;
+        }
+    }
+}

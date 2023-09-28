@@ -1,0 +1,24 @@
+// Base
+@import './base/reset';
+@import './base/vars'; // Variables
+@import './base/base'; // layout styles
+@import './base/text'; // page text
+
+// Blocks
+@import './blocks/sliders/big-slider';
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/shopping-block';
+@import './blocks/benefits';
+@import './blocks/cards';
+@import './blocks/product-slider';
+@import './blocks/fullscreen-container';
+@import './blocks/sliders/mini-slider';
+@import './blocks/news';
+@import './blocks/sliders/centered-slider';
+@import './blocks/sliders/human-slider';
+@import './blocks/benefit-cards';
+@import './blocks/contact';
+@import './blocks/social-media';
+@import './blocks/personal-advice';
+@import './blocks/footer';

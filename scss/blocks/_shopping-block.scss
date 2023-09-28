@@ -1,0 +1,92 @@
+.shopping-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+
+    .full-size-pics-wrapper {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        align-items: start;
+
+        .shopping-block-link {
+            width: 50%;
+            position: relative;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+            .item-description {
+                position: absolute;
+                bottom: 37px;
+                left: 12.3%;
+                max-width: 540px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1300px) {
+    .item-description {
+
+        .title-bigger {
+            font-size: 3vw;
+        }
+        .description {
+            font-size: 23px;
+        }
+        
+        // .title-bigger {
+        //     font-size: 6.5vw;
+        // }
+        // .description {
+        //     font-size: 23px;
+        // }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .shopping-block {
+        .full-size-pics-wrapper {
+            flex-direction: column;
+            width: 100%;
+    
+            .shopping-block-link {
+                width: 100%;
+                position: relative;
+    
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+                .item-description {
+                    position: absolute;
+                    bottom: 0;
+                    max-width: 100%;
+                    width: 100%;
+                    left: 0;
+                    height: 145px;
+                    background: rgba(0, 0, 0, 0.5);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+                    padding-left: 17px;
+                }
+            }
+        }
+    }
+}

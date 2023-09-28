@@ -1,0 +1,156 @@
+.personal-advice {
+    width: 100%;
+    margin-bottom: 90px;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        
+        .headline-wrapper {
+            max-width: 600px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            .headline {
+                text-transform: uppercase;
+                font-size: 43px;
+                text-align: center;
+            }
+        }
+        .personal-advice-info {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            .info-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                width: 33%;
+
+                .headline-wrapper {
+                    max-width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    .headline {
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-family: $yantramanav-regular;
+                        font-size: 19px;
+                        margin-bottom: 39px;
+                    }
+                    .payment-methods-headline {
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-family: $yantramanav-regular;
+                        font-size: 19px;
+                        margin-bottom: 5px;
+                    }
+                }
+                .delievery {
+                    display: flex;
+                    flex-wrap: wrap;
+                    min-width: 150px;
+                    gap: 34px;
+
+                    .delievery-icon-wrapper {
+
+
+                        .delievery-icon-ups {
+                            width: 54px;
+                            height: 54px;
+                        }
+                        .delievery-icon-truck {
+                            width: 70px;
+                            height: 45px;
+                        }
+                    }
+                }
+                .payment-methods-wrapper {
+                    width: 468px;
+                    height: 84px;
+                    .payment-methods {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .contact-info-text-wrapper {
+                    max-width: 400px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-bottom: 24px;
+
+                    .contact-info-text {
+                        font-size: 19px;
+                        font-family: $yantramanav-regular;
+                        text-align: center;
+                        color: $gray;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                .phone-number-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-bottom: 13px;
+
+                    .contact-number-icon {
+                        width: 37px;
+                        height: 37px;
+                        margin-right: 14px;
+                    }
+                    .phone-number {
+                        font-size: 34px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: $magenta;
+                    }
+                }
+                .mail-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .mail-icon {
+                        width: 25px;
+                        height: 20px;
+                        margin-right: 14px;
+                    }
+                    .mail-text-wrapper {
+                        .mail {
+                            font-size: 19px;
+                            font-family: $yantramanav-regular;
+                            color: $black;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .personal-advice {
+        .container {
+            .personal-advice-info {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                justify-content: space-between;
+            }
+        }
+    }
+}

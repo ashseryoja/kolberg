@@ -1,0 +1,31 @@
+.nav {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 30px;
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+}
+.header-main-box-1 {
+    .nav-list {
+        display: flex;
+        -moz-column-gap: 30px;
+        column-gap: 57px;
+    }
+}
+
+.nav-arrow-down-symbol {
+    margin-left: 13px;
+}
+
+.nav-arrow-down-symbol {
+    width: 6px;
+    height: 4px;
+    fill: $white;
+}

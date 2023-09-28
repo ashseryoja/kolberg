@@ -1,0 +1,190 @@
+.centered-slider {
+    background-color: $dark-white;
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 88px;
+    margin-bottom: 171px;
+}
+
+.centered-slider-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: $dark-white;
+}
+
+.centered-swiper {
+    width: 92.1%;
+    background-color: $dark-white;
+}
+
+.headline-wrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    .headline {
+        font-family: $yantramanav-bold;
+        font-size: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+    }
+    .products-box {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        -moz-column-gap: 78px;
+        column-gap: 78px;
+        margin-bottom: 52px;
+
+        .product-type {
+            font-size: 43px;
+            color: $black;
+            text-transform: uppercase;
+        }
+        .product-type_is-active {
+            font-size: 43px;
+            color: $black;
+            text-transform: uppercase;
+            border-bottom: 2px solid $black;
+        }
+    }   
+}
+
+.video-slide {
+    max-height: 700px;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    .slide-img-wrapper {
+        max-width: 786px;
+        height: 466px;
+        position: relative;
+
+        .slide-img {
+            height: 100%;
+            width: auto;
+        }
+
+        .video-name-wrapper {
+            position: absolute;
+            top: 24px;
+            left: 34px;
+            max-width: 70%;
+            overflow: hidden;
+
+            .video-name {
+                font-family: $yantramanav-regular;
+                font-size: 14px;
+                text-align: left;
+                text-overflow: ellipsis; 
+                overflow: hidden; 
+                white-space: nowrap;
+            }
+        }
+        .video-time {
+            position: absolute;
+            font-family: $yantramanav-regular;
+            font-size: 14px;
+            top: 24px;
+            right: 43px;
+        }
+        .video-play-button {
+            position: absolute;
+            height: 85px;
+            width: 85px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .video-play-icon {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .video-slide-bottom-box {
+        max-height: 210px;
+        width: 100%;
+
+        .video-slide-date {
+            color: #707070;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-top: 31px;
+            margin-left: 23px;
+            font-size: 14px;
+        }
+        .video-slide-description {
+            color: #000000;
+            margin-top: 14px;
+            margin-left: 19px;
+            font-size: 34px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .read-more {
+            margin-top: 14px;
+            font-size: 12px;
+            text-decoration: none;
+            color: $magenta;
+            font-family: $yantramanav-regular;
+            text-transform: uppercase;
+            margin-left: 23px;
+        }
+    }
+}
+
+.show-more-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 76px;
+    background-color: $dark-white;
+
+    .show-more-button {
+        width: 298px;
+        height: 66px;
+        background-color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.centered-slider-button-prev {
+    width: 64px;
+    height: 71px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(180deg);
+    left: 0px;
+    top: 42.8%;
+}
+.centered-slider-button-next {
+    width: 64px;
+    height: 71px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 42.8%; 
+    cursor: pointer;
+}

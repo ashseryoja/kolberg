@@ -1,0 +1,113 @@
+.cards-section {
+    width: 100%;
+    margin-top: 85px;
+
+    .container {
+
+        .card-items-wrapper{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: start;
+            margin-top: -80px;
+
+            .card-item {
+                width: 32.7%;
+                max-height: 885px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                margin-top: 81px;
+
+                .card-img {
+                    width: 100%;
+                }
+
+                .item-description {
+                    width: 100%;
+                    margin-top: 25px;
+                    padding: 0 15px;
+                    color: $black;
+                    text-align: start;
+                    overflow: hidden;
+
+                    .title-bigger {
+                        letter-spacing: 0.8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .cards-section {
+        width: 100%;
+        margin-top: 40px;
+    
+        .container {
+    
+            .card-items-wrapper{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: start;
+                margin-top: -79px;
+    
+                .card-item {
+                    width: 32.7%;
+                    max-height: 885px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    flex-direction: column;
+                    margin-top: 78px;
+    
+                    .card-img {
+                        width: 100%;
+                    }
+    
+                    .item-description {
+                        width: 100%;
+                        margin-top: 25px;
+                        padding: 0;
+                        color: $black;
+                        text-align: start;
+                        overflow: hidden;
+    
+                        .title-bigger {
+                            letter-spacing: 0.8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cards-section {
+        .container {
+            .card-items-wrapper{
+                .card-item {
+                    width: 45%;
+                }
+            }
+        }
+    }                    
+}
+
+@media screen and (max-width: 768px) {
+    .cards-section {
+        .container {
+            .card-items-wrapper{
+                .card-item {
+                    width: 90%;
+                }
+            }
+        }
+    }                    
+}
